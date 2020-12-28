@@ -4,7 +4,8 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "devStart":  "nodemon bot.js"
+    "start": "node bot.js",
+    "devStart": "nodemon bot.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonorMe/WuW_bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeonorMe/WuW_bot/issues"
+  },
+  "homepage": "https://github.com/LeonorMe/WuW_bot#readme"
 }
