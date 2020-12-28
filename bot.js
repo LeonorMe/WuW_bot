@@ -26,15 +26,15 @@ client.on('message', msg => {
         // msg.reply('pong!') // tags the user
     }
 
-    if (msg.content == 'test'){
-        const url = "https://cdn.discordapp.com/attachments/750859422368006204/793161995243094056/ist-chan-face.png"({size: ts(1005)});
+    if (msg.content === 'test'){
+        const url = "https://cdn.discordapp.com/attachments/750859422368006204/793161995243094056/ist-chan-face.png" ({size: 500});
         
         var embed = new Discord.MessageEmbed();
         embed.setTitle('IST-Chan');
         embed.setColor('#d64848');
         embed.setImage(url);
 
-        Discord.Message.channel.send(embed)
+        msg.channel.send(embed)
     }
 })
 
