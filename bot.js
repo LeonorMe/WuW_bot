@@ -18,12 +18,18 @@ client.on('messageDelete', msg => {
 
 client.on('message', msg => {
     if (msg.content == 'i love you'){
-        msg.react("❤️")
+        msg.react("❤️") // react to msg with emoji
     }
 
-    if (msg.content === 'ping'){
-        msg.channel.send("not tagged")
+    if (msg.content === 'ping'){ // recognize a word
+        msg.channel.send("pong not tagged") // sends a message
         // msg.reply('pong!') // tags the user
+    }
+
+    if (msg.content == '${BOT_PREFIX}${teste}'){
+        const url = "https://cdn.discordapp.com/attachments/750859422368006204/793161995243094056/ist-chan-face.png"
+        
+        Discord.Message.channel.send(url)
     }
 })
 

@@ -1,11 +1,10 @@
 {
   "name": "uwu_bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "\u0000",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js",
-    "devStart": "nodemon bot.js"
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",
