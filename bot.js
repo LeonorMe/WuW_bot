@@ -17,7 +17,7 @@ client.on('messageDelete', msg => {
 })
 
 client.on('message', msg => {
-    if (msg.content == 'i love you'){
+    if (msg.content == 'cute'){
         msg.react("❤️") // react to msg with emoji
     }
 
@@ -26,12 +26,23 @@ client.on('message', msg => {
         // msg.reply('pong!') // tags the user
     }
 
-    if (msg.content === 'test'){
-        const url = "https://cdn.discordapp.com/attachments/750859422368006204/793161995243094056/ist-chan-face.png" ({size: 500});
+    if (msg.content === 'image test'){
+        const url = "https://cdn.discordapp.com/attachments/750859422368006204/793161995243094056/ist-chan-face.png";
         
         var embed = new Discord.MessageEmbed();
         embed.setTitle('IST-Chan');
-        embed.setColor('#d64848');
+        embed.setColor('#d64848'); // salmao escuro
+        embed.setImage(url);
+
+        msg.channel.send(embed)
+    }
+
+    if(msg.content === '+hb'){ //${BOT_PREFIX}
+        const url = "https://cdn.discordapp.com/attachments/454750342731661322/788089405733732393/416e12df-620f-48ee-af44-ce1dc6f5cfa1.png";
+        
+        var embed = new Discord.MessageEmbed();
+        embed.setTitle('Happy Birthday!');
+        embed.setColor('#ffe72e'); // amarelo 
         embed.setImage(url);
 
         msg.channel.send(embed)
